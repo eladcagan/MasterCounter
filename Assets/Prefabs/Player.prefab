@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 919132149354314159}
   - component: {fileID: 919132149354314160}
   m_Layer: 0
-  m_Name: running man
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 1223869129585844996}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.013, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 1676586672861482120}
   - {fileID: 7267141592383145693}
@@ -236,7 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8473b1d408612046a596dc3c72d84ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerSpeed: 0.1
+  _playerSpeed: 1.5
+  _joystick: {fileID: 0}
 --- !u!114 &919132149354314160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88de074fd38e4b94b800d3e72fba8eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlayerClone: {fileID: 0}
+  _PlayerClone: {fileID: 2929633603975330268, guid: c23e920aba85cdc4cb9d39fb90fb8356, type: 3}
+  _radiusOffset: 10
+  _circleMaxValue: 10
 --- !u!1 &1293312429157364094
 GameObject:
   m_ObjectHideFlags: 0

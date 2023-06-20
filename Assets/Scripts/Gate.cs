@@ -7,7 +7,10 @@ public class Gate : MonoBehaviour
     [SerializeField]
     private GateType _gateType;
     [SerializeField]
+    private int _gateValue;
+    [SerializeField]
     private Collider _gateCollider;
+    
 
     private Player _player;
     // Start is called before the first frame update
@@ -25,7 +28,7 @@ public class Gate : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         _player = collision.gameObject.GetComponent<Player>();
-        _player.PerformGateAction(_gateType);
+        _player.PerformGateAction(_gateType, _gateValue);
     }
 
     public enum GateType
